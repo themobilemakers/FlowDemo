@@ -61,6 +61,30 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojl-Qj-3o0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.22272371599999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="DL4-d0-CMf"/>
+                                    <constraint firstAttribute="height" constant="35" id="wD6-n7-BRV"/>
+                                </constraints>
+                                <state key="normal" title="Signup">
+                                    <color key="titleColor" red="0.84666557450000002" green="0.83453006659999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DL4-d0-CMf"/>
+                                        <exclude reference="wD6-n7-BRV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DL4-d0-CMf"/>
+                                        <include reference="wD6-n7-BRV"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -68,31 +92,41 @@
                             <constraint firstAttribute="centerY" secondItem="YaY-uC-2As" secondAttribute="centerY" id="Ld5-SM-dmu">
                                 <variation key="widthClass=compact" constant="103"/>
                             </constraint>
+                            <constraint firstAttribute="centerX" secondItem="Ojl-Qj-3o0" secondAttribute="centerX" id="o2n-wu-ZtH"/>
                             <constraint firstAttribute="centerX" secondItem="rr4-FJ-rJP" secondAttribute="centerX" id="tei-hr-nBX"/>
                             <constraint firstAttribute="centerY" secondItem="rr4-FJ-rJP" secondAttribute="centerY" id="uUL-Vd-m4y"/>
+                            <constraint firstAttribute="centerY" secondItem="Ojl-Qj-3o0" secondAttribute="centerY" id="we6-PW-OnG">
+                                <variation key="widthClass=compact" constant="-59.5"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="rr4-FJ-rJP"/>
                                 <exclude reference="YaY-uC-2As"/>
+                                <exclude reference="Ojl-Qj-3o0"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7V9-8E-Cf2"/>
                                 <exclude reference="Ld5-SM-dmu"/>
                                 <exclude reference="tei-hr-nBX"/>
                                 <exclude reference="uUL-Vd-m4y"/>
+                                <exclude reference="o2n-wu-ZtH"/>
+                                <exclude reference="we6-PW-OnG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="rr4-FJ-rJP"/>
                                 <include reference="YaY-uC-2As"/>
+                                <include reference="Ojl-Qj-3o0"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="7V9-8E-Cf2"/>
                                 <include reference="Ld5-SM-dmu"/>
                                 <include reference="tei-hr-nBX"/>
                                 <include reference="uUL-Vd-m4y"/>
+                                <include reference="o2n-wu-ZtH"/>
+                                <include reference="we6-PW-OnG"/>
                             </mask>
                         </variation>
                     </view>
